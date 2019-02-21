@@ -27,8 +27,83 @@ document.write("buscar @ " +email.includes("@")+"<br>");
 //**convirtiendo a arreglos */
 
 console.log("convirtiendo txt2 a arreglo "+txt2.split(" ")+"<br>");
-
+//**haciendo que salga con todos los espacios */
 var txt3 = "            Procesando textos              ";
-document.write("El valor de txt3  es :"+txt3);
+document.write("El valor de txt3  es :"+"<pre>"+txt3+"</pre>");
+//**quitando los espacios, dejandolo sin ningun espacio */
+var sinpre =txt3.trim();
+document.write("El valor de txt3  es :"+"<pre>"+sinpre+"</pre>");
+//**remplasando */
+var remplazar = txt1.replace("imagenes","video");
+document.write("<h2>"+remplazar+"</h2>");
+
+//**ARREGLOS */
+
+//primera forma de mostrar el nombre por la posicion/
+var nombres = new Array("roxana","carlos","julian");
+document.write(nombres[0]);
+
+//segunda forma de mostrar el nombre por la posicion/
+var nombres2 =new Array();
+nombres2[0]="carlos";
+nombres2[1]="roxana";
+nombres2[2]="steven";
+
+//tercera forma de mostrar el nombre por la posicion/
+var nombres3=["juan","paco","luis"];
+
+//**metodos de arreglos */
+var programacion=["js","ruby","java","php","c#"];
+var pelicula=["acuaman","la horca","dumbo","los increibles"];
+programacion.push("swift");
+function imprimirArreglo(arreglo,opcion){
+    document.write("<h1>Imprimiendo arreglo"+opcion+"</h1>");
+    document.write("<ul>");
+        for (const key in arreglo) {
+            document.write("<li>"+arreglo[key]+"</li>");
+        }
+        document.write("</ul>");
+}
+imprimirArreglo(programacion," lenguajes de programacion");
+imprimirArreglo(pelicula,"peliculas");
+
+//**borrar el ultimo del array */
+pelicula.pop();
+imprimirArreglo(pelicula,"borrando el ultimo");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var categorias = ["comedia","terror","accion","ficcion"];
+// var peliculas = ["x-men","toy story","rapidos y furiosos","titanic"];
+// var cine = [categorias,peliculas];
+// console.log("cine",cine);
+// console.log(cine[0][3]);
+// console.log(cine[1][2]);
+
+
+
 
 
