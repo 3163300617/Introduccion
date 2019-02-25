@@ -75,6 +75,7 @@ let fecha = new Date
 let nTarea = new Tarea("estudiar","javascript");
 let nTarea1 = new Tarea("estudiar","php");
 let nTarea2 = new Tarea("estudiar","java");
+
 console.log(nTarea);
 console.log(nTarea.nombre,nTarea.tecnoligia);
 console.log(nTarea1.nombre,nTarea1.tecnoligia);
